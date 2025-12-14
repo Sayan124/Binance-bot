@@ -1,8 +1,6 @@
 ## <p align="center">🚀 Binance Futures Trading Bot</p>
 <p align="center">Professional Testnet Trading Automation</p>
 
-=======
-
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python">
   <img src="https://img.shields.io/badge/Binance-Futures-yellow?style=for-the-badge&logo=binance">
