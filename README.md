@@ -1,75 +1,8 @@
 ## <p align="center">🚀 Binance Futures Trading Bot</p>
 <p align="center">Professional Testnet Trading Automation</p>
 
-## Overview
-This is a CLI-based trading bot for Binance USDT-M Futures developed as part of the Python Developer assignment. It supports mandatory Core Orders (Market, Limit) and implements Advanced Orders (Stop-Limit, TWAP) to demonstrate algorithmic trading logic. [span_1](start_span)The system features robust input validation and structured logging[span_1](end_span).
-
-## Project Structure
-[span_2](start_span)The project follows the required submission structure[span_2](end_span):
-
-```text
-[your_name]-binance-bot/
-├── src/
-│   ├── market_orders.py      # Core: Market Order logic
-│   ├── limit_orders.py       # Core: Limit Order logic
-│   ├── utils.py              # Shared: Logging & API authentication
-│   └── advanced/             # Bonus: Advanced Order Logic
-│       ├── stop_limit.py     # Trigger-based orders
-│       └── twap.py           # Time-Weighted Average Price strategy
-[span_3](start_span)├── bot.log                   # Execution logs (API calls, errors)[span_3](end_span)
-├── report.pdf                # Analysis and screenshots
-├── requirements.txt          # Python dependencies
-└── README.md                 # Documentation
-```
-Setup Instructions
-1. Prerequisites
- * Python 3.8 or higher
- * A Binance Futures account (Testnet recommended for safety)
-2. Installation
-Navigate to the project root and install the dependencies:
-pip install -r requirements.txt
-
-3. API Configuration
-Security Note: API keys are not hardcoded. This project uses environment variables.
- * Create a file named .env in the root directory.
- * Add your Binance Futures API credentials:
-   BINANCE_API_KEY=your_actual_api_key
-BINANCE_API_SECRET=your_actual_api_secret
-
-   (Note: If using Testnet, ensure you are using Testnet keys, not Mainnet keys).
-Usage Guide (Reproducibility)
-Run the bot using the commands below. Ensure you are in the project root directory.
-Core Orders (Mandatory)
-1. Market Order
-Executes a trade immediately at the current market price.
-# Syntax: python src/market_orders.py <SYMBOL> <SIDE> <QUANTITY>
-python src/market_orders.py BTCUSDT BUY 0.002
-
-2. Limit Order
-Places an order to buy or sell at a specific price.
-# Syntax: python src/limit_orders.py <SYMBOL> <SIDE> <QUANTITY> <PRICE>
-python src/limit_orders.py BTCUSDT SELL 0.001 45000
-
-Advanced Orders (Bonus)
-3. Stop-Limit Order
-Triggers a limit order only when a specific stop price is hit.
-# Syntax: python src/advanced/stop_limit.py <SYMBOL> <SIDE> <QTY> <LIMIT_PRICE> <STOP_PRICE>
-python src/advanced/stop_limit.py ETHUSDT BUY 0.05 2000 1990
-
-4. TWAP Strategy (Time-Weighted Average Price)
-Splits a large order into smaller chunks executed over a specific duration to minimize market impact.
-# Syntax: python src/advanced/twap.py <SYMBOL> <SIDE> <TOTAL_QTY> <DURATION_SEC> <NUM_ORDERS>
-# Example: Buy 0.1 BTC over 60 seconds, split into 5 individual orders
-python src/advanced/twap.py BTCUSDT BUY 0.1 60 5
-
-Logging & Validation
- * Logs: All actions (order placement, API errors, execution status) are automatically appended to bot.log with timestamps.
- * Validation: Inputs (quantity, price, side) are validated before API calls are made to prevent invalid request errors.
-Resources
- * Binance Futures API Documentation
-<!-- end list -->
-
 =======
+
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python">
   <img src="https://img.shields.io/badge/Binance-Futures-yellow?style=for-the-badge&logo=binance">
