@@ -1,7 +1,6 @@
 ## <p align="center">🚀 Binance Futures Trading Bot</p>
 <p align="center">Professional Testnet Trading Automation</p>
 
-<<<<<<< HEAD
 ## Overview
 This is a CLI-based trading bot for Binance USDT-M Futures developed as part of the Python Developer assignment. It supports mandatory Core Orders (Market, Limit) and implements Advanced Orders (Stop-Limit, TWAP) to demonstrate algorithmic trading logic. [span_1](start_span)The system features robust input validation and structured logging[span_1](end_span).
 
@@ -21,7 +20,7 @@ This is a CLI-based trading bot for Binance USDT-M Futures developed as part of 
 ├── report.pdf                # Analysis and screenshots
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Documentation
-
+```
 Setup Instructions
 1. Prerequisites
  * Python 3.8 or higher
@@ -294,19 +293,6 @@ Your Binance Futures Trading Bot is now fully configured and ready to run on Tes
 
 ---
 
-If you want, next I can:
-
-Add a Troubleshooting section
-
-Add Usage examples
-
-Review your full README
-
-Prepare a final submission checklist
-
-
-Just tell me 👍
----
 
 🖥 Usage (CLI Commands)
 
@@ -424,6 +410,3 @@ Sayan Nandi
 If you’re reviewing this as part of a hiring process:
 Thank you for your time. I’d love to discuss the design choices in an interview.
 
-
-
->>>>>>> 7220097 (Readme uplod)
